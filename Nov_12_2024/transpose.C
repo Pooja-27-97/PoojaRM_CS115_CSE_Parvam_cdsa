@@ -2,18 +2,16 @@
 int main() {
     int n;
     scanf("%d",&n);
-    int m;
-    scanf("%d",&m);
-    int arr[n][m];
+    int arr[n][n];
     for(int i=0 ; i<n ; i++) {
-        for(int j=0 ; j<m ; j++) {
+        for(int j=0 ; j<n ; j++) {
             scanf("%d",&arr[i][j]);
         }
     }
     printf("Transpose of matrix:\n");
     for(int i=0 ; i<n ; i++) {
-        for(int j=0 ; j<m ; j++) {
-            printf("%d ",arr[j][i]);
+        for(int j=0 ; j<n ; j++) {
+            printf("%d ",arr[i][j]);//exchanging rows and columns
         }
         printf("\n");
     }
